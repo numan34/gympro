@@ -1,0 +1,684 @@
+/*
+Template Name: ERN - HTML Template
+Author: Themepoo
+Version: 1.00
+
+Table of Content
+----------------
+
+1. head part
+    1.1. nav part
+    1.2. login part
+	1.3. slider part
+2. about part
+3. video part + skill part
+4. work part
+5. testimonial part
+6. bolg part
+7. counter part
+8. calendar + event part
+9. partner part
+10. services part
+11. contact part
+*/
+
+/* commom css */
+
+.container {
+    max-width: 1200px !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    outline: 0;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+body,
+html {
+    background: #f1f1f1;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+
+    /*    font-family: 'Oswald', sans-serif;     */
+}
+
+/* main css coading */
+
+/* nav-bar-start */
+
+.custom_nav {
+    margin-top: 30px;
+    padding: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    background: rgba(42, 42, 42, .4)
+}
+
+.logo-box {
+    padding: 0;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    margin-left: 23px;
+    background: #323232;
+    border-right: 5px solid #000;
+    border-left: 5px solid #000;
+    transform: skewX(-33.0deg);
+}
+
+.logo-box img {
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) skewX(33.0deg);
+}
+
+.menu ul li a {
+    position: relative;
+    color: #f1f1f1 !important;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    padding: 15px 10px 11px 10px !important;
+    margin: 0 2px !important;
+    text-transform: capitalize;
+
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 3px solid #00c0e8;
+    border-right: 3px solid #00c0e8;
+    border-radius: .25rem;
+    background: #f1f1f1;
+    opacity: 0;
+    z-index: -12;
+
+    transition: all .7s;
+    -webkit-transition: all .7s;
+    -moz-transition: all .5s;
+}
+
+.menu ul li .active::before,
+.menu ul li:hover a::before {
+    width: 100%;
+    opacity: 1;
+}
+
+.menu ul li .active,
+.menu ul li:hover a {
+    color: #323232 !important;
+    position: relative;
+}
+
+.bg {
+    background: rgba(42, 42, 42, 0.8);
+    margin-top: 9px;
+}
+
+/* nav part end */
+
+/* bannder part css start */
+.banner_slider {
+    position: relative;
+    height: 655px;
+}
+
+.banner_slider .previous,
+.banner_slider .next {
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: #b2b1b1;
+    padding: 120px 50px;
+    cursor: pointer;
+}
+
+.previous {
+    left: 5% !important;
+}
+
+.next {
+    right: 5% !important;
+}
+
+.banner_slider .previous:hover,
+.banner_slider .next:hover {
+    opacity: .7;
+}
+
+.banner-img {
+    height: 655px;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+#testimonial-part::before,
+#gallery-part::before,
+.banner-img::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.banner-text {
+    z-index: 45;
+    position: relative;
+    margin-top: 250px;
+}
+
+.banner-text h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #00c0e8;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-text h1 {
+    color: #00c0e8;
+    font-size: 60px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #f1f1f1;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner-text p {
+    color: #dddddd;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #222222;
+    padding: 0px 0px 30px 0px;
+}
+
+.banner-btn-tag a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    padding: 9px 15px !important;
+    text-transform: uppercase;
+    border: 1px solid #00c0e8;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 5px;
+    border-radius: .25rem;
+
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+}
+
+.banner-btn-tag a.second:hover,
+.banner-btn-tag a.first {
+    background: #00c0e8;
+    border-color: #00c0e8
+}
+
+.banner-btn-tag a.second {
+    border: 1px solid #fff;
+}
+
+.banner-btn-tag a.first:hover,
+.banner-btn-tag a.second {
+    background: none;
+}
+
+
+.banner_slider ul.slick-dots {
+    top: -30px;
+    position: relative;
+    text-align: center;
+}
+
+.content-monial .slick-dots li,
+.banner_slider .slick-dots li {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.content-monial .slick-dots li button,
+.banner_slider .slick-dots li button {
+    color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #fff;
+}
+
+.content-monial .slick-dots li.slick-active button,
+.banner_slider .slick-dots li.slick-active button {
+    border: 2px solid #00c0e8;
+}
+
+/* bannder part css end */
+
+/* about part css start */
+
+#team-part,
+#about-section {
+    padding: 80px 0 80px 0;
+}
+
+#video_part {
+    position: relative;
+    cursor: pointer;
+    z-index: 2987;
+
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+}
+
+#video_part .over-lay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 12;
+}
+
+#video_part .over-lay svg {
+    color: #323232;
+    font-size: 60px;
+    background: linear-gradient(to right, #00c0e8 30%, #6600cc 90%);
+    border-radius: 50%;
+    padding: 2px;
+    z-index: 123;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#video_part:hover .over-lay svg {
+    background: linear-gradient(to right, #00c0e8 50%, #6600cc 100%);
+}
+
+.modal-dialog {
+    margin-top: 90px;
+}
+
+#video_part .modal-content .close span {
+    font-size: 100px;
+    position: absolute;
+    right: -60px;
+    top: -30px;
+}
+
+.team-header img,
+.about-text img {
+    width: 120px;
+}
+
+.testi-heading h2,
+.team-header h2,
+.gall_heading h2,
+.about-text h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #222222;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.about-text p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #444444;
+    margin-top: 10px;
+}
+
+/* about part css end */
+
+/* gallery-part css start */
+
+#gallery-part {
+    background: url(../images/gallery.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 80px 0 70px 0;
+}
+
+.testi-heading img,
+.gall_heading img {
+    width: 160px;
+    height: 8px;
+    margin: 10px 0 50px 0;
+}
+
+#gallery-part .card .over-lay {
+    position: absolute;
+    background: rgba(0, 192, 232, .6);
+    background: linear-gradient(to right, rgba(0, 192, 232, .6), rgba());
+    padding: 15px;
+    border-radius: .25rem;
+    border: 2px solid #fff;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
+
+/********   1st img   **********/
+#gallery-part .card:nth-child(1) .over-lay {
+    top: 5%;
+    left: 5%;
+    width: 0;
+    opacity: 0;
+}
+
+#gallery-part .card:hover:nth-child(1) .over-lay {
+    width: 90%;
+    opacity: 1;
+}
+
+/********   3rd img   **********/
+#gallery-part .card:nth-child(3) .over-lay {
+    transform: scale(0);
+    top: 5%;
+    left: 5%;
+}
+
+#gallery-part .card:hover:nth-child(3) .over-lay {
+    transform: scale(1)
+}
+
+/*********   5th img   ************/
+#gallery-part .card:nth-child(5) .over-lay {
+    top: 5%;
+    right: 5%;
+    width: 0;
+    opacity: 0;
+}
+
+#gallery-part .card:hover:nth-child(5) .over-lay {
+    width: 90%;
+    opacity: 1;
+}
+
+/*********   2nd img   ************/
+#gallery-part .card:nth-child(2) .over-lay {
+    top: 5%;
+    left: 5%;
+    height: 0;
+    opacity: 0;
+}
+
+#gallery-part .card:hover:nth-child(2) .over-lay {
+    height: 90%;
+    opacity: 1;
+}
+
+/*********   4th img   ************/
+#gallery-part .card:nth-child(4) .over-lay {
+    top: 5%;
+    left: 5%;
+    opacity: 0;
+}
+
+#gallery-part .card:hover:nth-child(4) .over-lay {
+    opacity: 1;
+}
+
+/*********   6th img   ************/
+#gallery-part .card:nth-child(6) .over-lay {
+    bottom: 5%;
+    left: 5%;
+    height: 0;
+    opacity: 0;
+}
+
+#gallery-part .card:hover:nth-child(6) .over-lay {
+    opacity: 1;
+    height: 90%;
+}
+
+/***********  \\//\\//  *************/
+
+#gallery-part .card .body {
+    text-transform: capitalize;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#gallery-part .card .body a {
+    color: #f1f1f1;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 1px 2px 1px #000;
+}
+
+#gallery-part .card .body a:hover {
+    text-decoration: underline;
+}
+
+#gallery-part .card .body p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-shadow: 2px 1px 1px #000;
+}
+
+#gallery-part .card .body small {
+    font-weight: 400;
+    color: #3f585d;
+    display: block;
+    margin-top: 10px;
+    text-shadow: 1px 2px 0px #fff;
+}
+
+#gallery-part .card .over-lay a img {
+    width: 10%;
+    z-index: 123;
+    margin-top: 10px;
+}
+
+/* gallery-part css end */
+
+/* team-part css start */
+
+.my-team-card {
+    border: 2px solid #f1f1f1;
+    height: 345px;
+    overflow: hidden;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
+
+.my-team-card:hover {
+    height: 408px;
+    margin-top: -63px;
+}
+
+.my-team-card .chobi {
+    position: relative;
+    background: #f1f1f1;
+    padding: 10px 15px 0 15px;
+    height: 270px;
+}
+
+.my-team-card .chobi img.call-img {
+    height: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.chobi .chobir_overlay {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    width: 90%;
+    height: 0%;
+    overflow: hidden;
+    background: rgba(0, 192, 232, .6);
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+}
+
+.my-team-card:hover .chobir_overlay {
+    height: 90%;
+}
+
+.chobir_overlay a img {
+    width: 12%;
+    margin: 5px;
+}
+
+.my-team-card .card-body h6,
+.my-team-card .card-body h5 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    color: #222222;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.my-team-card .card-body h6 {
+    font-size: 14px;
+    color: #444444;
+}
+
+.my-team-card .card-body p {
+    font-size: 13px;
+    color: #444444;
+    margin-bottom: 10px;
+}
+
+/* team-part css end */
+
+/* testimonial-part css strat */
+
+#testimonial-part {
+    position: relative;
+    background: url(../images/gym.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.testi-heading img {
+    width: 143px;
+}
+
+.media_creation .img-set {
+    height: 90px;
+    width: 90px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.media_creation .img-set img {
+    width: 100%;
+
+}
+
+.media_creation h5 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+}
+
+.media_creation h6 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    color: #f1f1f1;
+}
+
+.media_creation svg {
+    font-size: 14px;
+    color: #00c0e8;
+}
+
+.media_creation p {
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+/* testimonial-part css end */

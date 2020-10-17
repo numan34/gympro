@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise Your Body</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animation css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- veno-box-css -->
+    <link rel="stylesheet" href="css/venobox.css">
+    <!-- web-icon css -->
+    <link rel="stylesheet" href="font/flaticon.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="fontawesome-free-5.9.0-web/css/all.min.css">
+    <!-- google font css -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Oswald:400,500,700&display=swap"
+        rel="stylesheet">
+    <!-- main style css -->
+    <link rel="stylesheet" href="css/main-style.css">
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <header id="head-section">
+        <nav class="navbar navbar-expand-lg navbar-light custom_nav fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo-box text-center" href="index.html">
+                    <img src="images/logo1.png" alt="logo missing">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto js-signin-modal-trigger">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#head-section">home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-section">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plans-section">plans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team-part">team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery-part">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial-part">testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- nav bar end -->
+
+    <!-- banner part start -->
+    <section class="banner_slider">
+        <div class="previous"><i class="fas fa-chevron-left" aria-hidden="true"></i></div>
+        <div class="next"><i class="fas fa-chevron-right " aria-hidden="true"></i></div>
+
+        <div class="faded">
+            <div class="banner-img" style="background: url(images/body.jpg) no-repeat center;">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-10">
+                            <div class="banner-text text-center wow zoomIn">
+                                <h3>build muscles</h3>
+                                <h1>with gymnasium</h1>
+                                <p>
+                                    Our industry faces shortages in skilled professionals at all levels, and for many
+                                    companies
+                                    these shortages have reached a dire point. Now is the time to change the image of
+                                    the
+                                    industry as a viable career choice!
+                                </p>
+                                <div class="banner-btn-tag">
+                                    <a href="#" class="first">join now</a>
+                                    <a href="#" class="second">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-img" style="background: url(images/dumbell.jpg) no-repeat center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-10">
+                            <div class="banner-text text-center">
+                                <h3>if you want to achieve greatness</h3>
+                                <h1>work hard</h1>
+                                <p>No matter where you are in your career, chances are you're in need of a little
+                                    motivation
+                                    to get to the next step—to go for the job you'll actually love waking up for, to ask
+                                    for
+                                    that
+                                    promotion, to figure out.
+                                </p>
+                                <div class="banner-btn-tag">
+                                    <a href="#" class="first">join now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-img" style="background: url(images/muscle.jpg) no-repeat center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-10">
+                            <div class="banner-text text-center">
+                                <h3>work hard today</h3>
+                                <h1>lead tomorrow</h1>
+                                <p> the only way to do great work is to love what you do. if you haven't found it yet,
+                                    keep
+                                    looking & Don't settle. it is never too late to be what you might have been. a mind
+                                    troubled
+                                    by
+                                    doubtcannot focus on the course to victory.
+                                </p>
+                                <div class="banner-btn-tag">
+                                    <a href="#" class="second">view more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- banner part end -->
+
+    <!-- about-section start-->
+    <div id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!-- video modal start -->
+                    <div id="video_part" data-toggle="modal" data-target=".bs-example-modal-lg">
+                        <img src="images/video-logo.jpg" alt="missing" style="width:100%">
+                        <div class="over-lay">
+                            <i class="far fa-play-circle"></i>
+                        </div>
+                        <!-- embed -->
+                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <div class="embed-responsive embed-responsive-16by9 video_modal">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3ubeHVSiCZE"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- video modal end -->
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="about-text text-center">
+                        <h2 class="">about us</h2>
+                        <img src="images/heading-icon.png" alt="missing">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sed eius facilis fugiat
+                            necessitatibus iusto modi amet laborum perspiciatis repellendus saepe quo libero enim
+                            consectetur temporibus, non, ducimus error. Dolorum!</p> <br>
+                        <p>Remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+                            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                            my name is of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about-section end-->
+
+    <!-- gallery-section start-->
+    <section id="gallery-part">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <div class="gall_heading">
+                        <h2 style="color:#fff">our gallery</h2>
+                        <img src="images/heading-icon-1.png" alt="missing">
+                    </div>
+                    <div class="card-columns text-white">
+                        <div class="card p-1">
+                            <img src="images/one.jpg" class="card-img-top" alt="image-missing">
+                            <div class="over-lay">
+                                <div class="body">
+                                    <a class="venobox" data-gall="gallery" href="images/one.jpg" title=""
+                                        alt="missing">view image</a>
+                                    <p>this card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <small>last updated 3 mins ago</small>
+                                    <a href="#"><img src="images/svg/facebook.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/002-twitter.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/003-instagram.svg" alt="svg missing"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-1">
+                            <img src="images/four.jpg" class="card-img-top" alt="image-missing">
+                            <div class="over-lay">
+                                <div class="body">
+                                    <a class="venobox" data-gall="gallery" href="images/four.jpg" title=""
+                                        alt="missing">view image</a>
+                                    <p>this card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <small>last updated 3 mins ago</small>
+                                    <a href="#"><img src="images/svg/facebook.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/002-twitter.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/003-instagram.svg" alt="svg missing"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-1">
+                            <img src="images/two.jpg" class="card-img-top" alt="image-missing">
+                            <div class="over-lay">
+                                <div class="body">
+                                    <a class="venobox" data-gall="gallery" href="images/two.jpg" title=""
+                                        alt="missing">view image</a>
+                                    <p>this card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <small>last updated 3 mins ago</small>
+                                    <a href="#"><img src="images/svg/facebook.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/002-twitter.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/003-instagram.svg" alt="svg missing"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-1">
+                            <img src="images/five.jpg" class="card-img-top" alt="image-missing">
+                            <div class="over-lay">
+                                <div class="body">
+                                    <a class="venobox" data-gall="gallery" href="images/five.jpg" title=""
+                                        alt="missing">view image</a>
+                                    <p>this card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <small>last updated 3 mins ago</small>
+                                    <a href="#"><img src="images/svg/facebook.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/002-twitter.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/003-instagram.svg" alt="svg missing"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-1">
+                            <img src="images/three.jpg" class="card-img-top" alt="image-missing">
+                            <div class="over-lay">
+                                <div class="body">
+                                    <a class="venobox" data-gall="gallery" href="images/three.jpg" title=""
+                                        alt="missing">view image</a>
+                                    <p>this card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <small>last updated 3 mins ago</small>
+                                    <a href="#"><img src="images/svg/facebook.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/002-twitter.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/003-instagram.svg" alt="svg missing"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-1">
+                            <img src="images/six.jpg" class="card-img-top" alt="image-missing">
+                            <div class="over-lay">
+                                <div class="body">
+                                    <a class="venobox" data-gall="gallery" href="images/six.jpg" title=""
+                                        alt="missing">view image</a>
+                                    <p>this card has supporting text below as a natural lead-in to
+                                        additional content.</p>
+                                    <small>last updated 3 mins ago</small>
+                                    <a href="#"><img src="images/svg/facebook.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/002-twitter.svg" alt="svg missing"></a>
+                                    <a href="#"><img src="images/svg/003-instagram.svg" alt="svg missing"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery-section end-->
+
+    <!-- our team-section strat-->
+
+    <section id="team-part" style="background:#fff">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12 mb-5 pb-3">
+                    <div class="team-header">
+                        <h2>our team</h2>
+                        <img src="images/heading-icon.png" alt="missing">
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card my-team-card">
+                        <div class="chobi">
+                            <img class="call-img" src="images/team-1.png" alt="missing">
+                            <div class="chobir_overlay text-right">
+                                <a href="#"><img src="images/svg/facebook.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/linkedin.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/002-twitter.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/004-youtube.svg" alt=""></a> <br>
+                            </div>
+                        </div>
+                        <div class="card-body text-left">
+                            <h5>Nancy</h5>
+                            <h6>cheif trainer</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card my-team-card">
+                        <div class="chobi">
+                            <img class="call-img" src="images/team-2.png" alt="missing">
+                            <div class="chobir_overlay text-right">
+                                <a href="#"><img src="images/svg/facebook.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/linkedin.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/002-twitter.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/004-youtube.svg" alt=""></a> <br>
+                            </div>
+                        </div>
+                        <div class="card-body text-left">
+                            <h5>dwayne johnson</h5>
+                            <h6>cheif trainer</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card my-team-card">
+                        <div class="chobi">
+                            <img class="call-img" src="images/team-3.png" alt="missing">
+                            <div class="chobir_overlay text-right">
+                                <a href="#"><img src="images/svg/facebook.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/linkedin.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/002-twitter.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/004-youtube.svg" alt=""></a> <br>
+                            </div>
+                        </div>
+                        <div class="card-body text-left">
+                            <h5>julie</h5>
+                            <h6>female trainer</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="card my-team-card">
+                        <div class="chobi">
+                            <img class="call-img" src="images/team-4.png" alt="missing">
+                            <div class="chobir_overlay text-right">
+                                <a href="#"><img src="images/svg/facebook.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/linkedin.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/002-twitter.svg" alt=""></a> <br>
+                                <a href="#"><img src="images/svg/004-youtube.svg" alt=""></a> <br>
+                            </div>
+                        </div>
+                        <div class="card-body text-left">
+                            <h5>harry</h5>
+                            <h6>male trainer</h6>
+                            <p>Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- our team-section end-->
+
+    <!-- testimonial-section strat-->
+
+    <section id="testimonial-part">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testi-heading text-center">
+                        <h2 style="color:#fff">testimonial</h2>
+                        <img src="images/heading-icon-1.png" alt="missing">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row content-monial text-center justify-content-center">
+                <div class="col-lg-7">
+                    <div class="text-white media_creation">
+                        <div class="img-set">
+                            <img src="images/slide-1.png" alt="Size 80px X 80px">
+                        </div>
+                        <h5 class="mb-1">md. jahid hassan</h5>
+                        <h6 class="mb-0">adviser</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p class="mt-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                            ante
+                            sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                            condimentum
+                            nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-white media_creation">
+                        <div class="img-set">
+                            <img src="images/slide-2.png" alt="Size 80px X 80px">
+                        </div>
+                        <h5 class="mb-1">kareena kapoor</h5>
+                        <h6 class="mb-0">gymnnastic</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p class="mt-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                            ante
+                            sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                            condimentum
+                            nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-white media_creation">
+                        <div class="img-set">
+                            <img src="images/slide-3.jpg" alt="Size 80px X 80px">
+                        </div>
+                        <h5 class="mb-1">tony stark</h5>
+                        <h6 class="mb-0">trainer</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p class="mt-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                            ante
+                            sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                            condimentum
+                            nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-white media_creation">
+                        <div class="img-set">
+                            <img src="images/slide-1.png" alt="Size 80px X 80px">
+                        </div>
+                        <h5 class="mb-1">thor ragnarok</h5>
+                        <h6 class="mb-0">adviser</h6>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <p class="mt-2">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                            ante
+                            sollicitudin.
+                            Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce
+                            condimentum
+                            nunc
+                            ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quos accusamus ut nulla consectetur rem. Labore
+        quae vitae iste laudantium, deleniti animi possimus, blanditiis, velit doloremque ipsum aliquid omnis rem.</p>
+
+
+
+
+
+    <!-- testimonial-section end-->
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery parts -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <!-- waypoint js -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- counter js -->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- font awesome js -->
+    <script src="fontawesome-free-5.9.0-web/js/all.min.js"></script>
+    <!-- filterizer js -->
+    <script src="js/jquery.filterizr.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <!-- veno-box-js -->
+    <script src="js/venobox.min.js"></script>
+    <!-- animation js -->
+    <script src="js/anijs-min.js"></script>
+    <script src="js/anijs-helper-scrollreveal-min.js"></script>
+    <!-- main js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
